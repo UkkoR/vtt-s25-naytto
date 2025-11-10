@@ -1,0 +1,419 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "open sans";
+  /*HETKELLINEN KOODI*/
+
+  background-color: rgb(17, 29, 29);
+}
+@font-face {
+  font-family: "open sans";
+  src: url(fontti.ttf);
+}
+.help {
+  position: fixed;
+  height: 45px;
+  width: 105px;
+  background-color: rgb(121, 121, 236);
+  border: solid 1px rgb(121, 121, 236);
+  color: white;
+
+  border-radius: 30px;
+  bottom: 15px;
+  right: 20px;
+
+  font-size: 14px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.help__symbol {
+  width: 20px;
+  fill: white;
+
+  padding-right: 10px;
+}
+.info-ylapalkki {
+  color: white;
+  display: flex;
+}
+.info-ylapalkki__teksti {
+  display: flex;
+  flex-direction: column;
+}
+.info-ylapalkki__lajitelma {
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+}
+.navbar__parts {
+  background-color: black;
+  height: 88px;
+
+  display: flex;
+  flex-direction: row;
+}
+.navbar__part1 {
+  color: white;
+  padding-left: 90px;
+
+  display: flex;
+  flex-direction: row;
+}
+.navbar__part1__software {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+}
+.navbar__part1__software__text {
+  padding-left: 5px;
+}
+.navbar__part1__software:hover .navbar__part1__software__text {
+  color: lightblue;
+}
+.navbar__part1__software__logo {
+  width: 30px;
+  filter: invert(1);
+
+  /*HETKELLINEN KOODI*/
+}
+.navbar__part1__divider {
+  display: flex;
+  align-items: center;
+
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.navbar__part1__divider__pole {
+  height: 30px;
+  width: 2px;
+  background-color: white;
+}
+.navbar__part1__help-center {
+  display: flex;
+  align-items: center;
+}
+.navbar__part1__help-center__text {
+  text-decoration: none;
+  color: white;
+}
+.navbar__part2 {
+  color: white;
+  margin-left: auto;
+  padding-right: 90.5px;
+  align-items: center;
+
+  display: flex;
+  flex-direction: row;
+}
+@media (max-width: 1000px) {
+  .navbar__part2 {
+    display: none;
+  }
+  .navbar__part3__icon {
+    display: contents;
+  }
+  .mainpage__help__searchbar {
+    margin: 0;
+  }
+  .mainpage__about__part {
+    max-width: 300px;
+  }
+  .footer {
+    min-height: 800px;
+  }
+  .footer__info {
+    flex-direction: column;
+  }
+  .footer__copyright__box__text__line {
+    line-height: normal;
+  }
+}
+.navbar__part2__searchbar {
+  /*HETKELLINEN KOODI */
+  height: 51px;
+  width: 262px;
+  border: solid 1px white;
+  background-color: white;
+
+  border-radius: 8px;
+  display: flex;
+  margin-right: 17px;
+}
+.navbar__part2__searchbar__input {
+  border-radius: 10px;
+  outline: none;
+  border: solid white;
+  padding-left: 20px;
+}
+.navbar__part2__searchbar__input::placeholder {
+  font-size: larger;
+}
+.navbar__part2__request {
+  height: 48px;
+  width: 229.5px;
+  background-color: rgb(15, 26, 26);
+  border: solid 1px white;
+  border-radius: 8px;
+  margin-right: 16px;
+}
+.navbar__part2__request__button {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+}
+.navbar__part2__sign-in {
+  height: 49.3px;
+  width: 140px;
+
+  background-color: blue;
+  border-radius: 8px;
+}
+.navbar__part2__sign-in__button {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+}
+.navbar__part2__sign-in:hover {
+  background-color: white;
+}
+.navbar__part2__sign-in:hover .navbar__part2__sign-in__button {
+  color: black;
+}
+.navbar__part3__button {
+  background-color: black;
+  display: ;
+}
+.navbar__part3__button__icon {
+  width: 30px;
+
+  filter: invert(1);
+  padding-top: 30px;
+  padding-right: 30px;
+}
+.navbar__part3__popover {
+  width: 100%;
+  height: 200px;
+  background-color: black;
+
+  display: flex;
+  margin-top: auto;
+  bottom: 165px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.navbar__part3__popover__text {
+  text-decoration: none;
+  color: white;
+}
+.navbar__part3__popover__divider {
+  height: 1px;
+  width: 300px;
+  background-color: white;
+}
+/* MAINPAGE */
+
+.mainpage {
+  background-color: lightblue;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  /*HETKELLINEN KOODI*/
+}
+.mainpage__help {
+  height: 396.5px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.mainpage__help__title {
+  font-size: 80px;
+  height: 200px;
+
+  margin-top: 5px;
+  padding-bottom: 10px;
+  letter-spacing: -5px;
+
+  /*HETKELLINEN KOODI*/
+}
+.mainpage__help__searchbar {
+  display: flex;
+  height: 62px;
+  width: 56%;
+  
+  position:relative;
+
+  background-color: white;
+  border-radius: 8px;
+  border: 1px solid black;
+}
+.mainpage__help__searchbar__arrow {
+  width: 30px;
+  position: absolute;
+  right: 15px;
+  top: 17px;
+}
+.mainpage__help__searchbar__input {
+  width: 100%;
+  border-radius: 8px;
+  border-width: 0;
+  padding-left: 20px;
+}
+.mainpage__help__searchbar__input::placeholder {
+  font-size: 20px;
+  margin-left: 20px;
+}
+.mainpage__about {
+  background-color: white;
+  width: 100%;
+  padding-top: ;
+
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  /*HETKELLINEN KOODI*/
+
+  padding-top: 120px;
+  padding-bottom: 70px;
+}
+.mainpage__about__part {
+  width: 503px;
+  padding: 10px;
+
+  display: flex;
+
+  /*HETKELLINEN KOODI*/
+}
+
+/* MAIN PAGE ABOUT OPTIONS */
+
+.mainpage__about__part__icon {
+  width: 80px;
+  margin-top: -130px;
+  padding-right: 10px;
+  /* HETKELLINEN KOODI */
+}
+.mainpage__about__part__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 20px;
+}
+.mainpage__about__part__text__title {
+}
+.mainpage__about__part__text__description {
+  font-weight: 300;
+  font-size: 22px;
+}
+.mainpage__about__part__text__link {
+}
+.mainpage__about__part__text__link a:link {
+  text-decoration: none;
+  font-size: 20px;
+}
+.mainpage__about__part__text__link:hover a:link {
+  text-decoration: underline;
+}
+
+/* FOOTER */
+
+.footer {
+  background-color: black;
+  height: 402px;
+
+  display: flex;
+}
+.footer__info {
+  display: flex;
+
+  /*HETKELLINEN KOODI*/
+  padding-left: 90px;
+}
+.footer__info__part {
+  width: 164.7px;
+  padding-top: 22px;
+  padding-left: 3px;
+}
+.footer__info__part__title {
+  color: white;
+
+  /* HETKELLINEN KOODI */
+  font-size: 22px;
+  margin-bottom: 11px;
+  padding-top: 3px;
+}
+.footer__info__part__list {
+  display: flex;
+  flex-direction: column;
+}
+.footer__info__part__list__link {
+  color: white;
+  text-decoration: none;
+  padding-top: 5px;
+  height: 19px;
+}
+.footer__info__part__list__link:hover {
+  text-decoration: underline;
+}
+.footer__info__part__contact {
+  padding-top: 13px;
+}
+.footer__info__part__contact__title {
+  color: white;
+  height: 2px;
+}
+.footer__info__part__contact__email {
+  text-decoration: none;
+  color: white;
+}
+.footer__info__part__contact__email:hover {
+  text-decoration: underline;
+}
+.footer__copyright {
+  /*HETKELLINEN KOODI*/
+  display: flex;
+  width: 100%;
+  margin-top: auto;
+}
+.footer__copyright__box {
+  /*HETKELLINEN KOODI*/
+  padding-bottom: 50px;
+  padding-left: 175px;
+  margin-right: 10px;
+}
+.footer__copyright__box__logo {
+  height: 30px;
+  width: 30px;
+  filter: invert(1);
+  padding-bottom: 5px;
+}
+.footer__copyright__box__text {
+  color: white;
+}
+.footer__copyright__box__text__line {
+  text-wrap: nowrap;
+  line-height: 8px;
+  font-size: 20px;
+}

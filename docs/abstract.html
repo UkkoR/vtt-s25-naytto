@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+
+<head>
+    <link rel="stylesheet" href="tyylit.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<button class="help"><img src="download.svg" class="help__symbol"><b>Help</b></button>
+
+<body>
+
+    <div class="info-ylapalkki">
+        <div class="info-ylapalkki-teksti">
+            <p>Ukko Ryynänen</p>
+            <p>Sivu on harjoitustyö</p>
+            <p>Referenssinä käytetty Abstract sivustoa <a href="https://help.goabstract.com/hc/en-us">Linkki sivulle</a>
+            </p>
+            <p>työn tehtävänanto löytyy frontendpractice.com:in abstract-projektisivulta</p>
+        </div>
+        <p>Fontit ja ikonit:
+        <ul>
+            <li><a href="https://www.svgrepo.com/vectors/arrow/2">Nuoli symboli</a></li>
+            <li><a href="https://www.svgrepo.com/svg/512257/flower-105">Kukka "logo"</a></li>
+            <div class="info-ylapalkki__lajitelma">
+                <li><a href="https://www.svgrepo.com/svg/533272/message-square-list">Viestikupla</a></li>
+                <li><a href="https://www.svgrepo.com/svg/532432/dollar-sign">Dollari</a></li>
+                <li><a href="https://www.svgrepo.com/svg/498972/people">2 Käyttäjää</a></li>
+                <li><a href="https://www.svgrepo.com/svg/535465/key-skeleton">Avain</a></li>
+                <li><a href="https://www.svgrepo.com/svg/510149/puzzle-piece">Palapeli pala</a></li>
+                <li><a href="https://www.svgrepo.com/svg/509958/git-branch">git symboli</a></li>
+                <li><a href="https://www.svgrepo.com/svg/522140/hamburger">Hampurilaismenu symboli</a></li>
+            </div>
+        </ul>
+        </p>
+        <h2> Toteutus resoluutio: 1280 </h2>
+        <h2> Responsiivinen: Kyllä </h2>
+    </div>
+
+    <div class="navbar">
+
+        <div class="navbar__parts">
+
+            <div class="navbar__part1">
+
+                <a href="#" class="navbar__part1__software">
+                    <img class=navbar__part1__software__logo src="logo.svg">
+                    <h2 class="navbar__part1__software__text">Software</h2>
+                </a>
+
+                <div class="navbar__part1__divider">
+                    <div class="navbar__part1__divider__pole"></div>
+                </div>
+
+                <div class="navbar__part1__help-center">
+                    <a class="navbar__part1__help-center__text" href="#">
+                        <h2>Help Center</h2>
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="navbar__part2">
+
+                <div class="navbar__part2__searchbar">
+                    <input type="text" placeholder="Search" class="navbar__part2__searchbar__input"></input>
+                </div>
+
+                <div class="navbar__part2__request">
+                    <a href="#" class="navbar__part2__request__button">
+                        <h2>Submit a request</h2>
+                    </a>
+                </div>
+
+                <div class="navbar__part2__sign-in">
+                    <a href="#" class="navbar__part2__sign-in__button">
+                        <h2>Sign in</h2>
+                    </a>
+                </div>
+            </div>
+
+            <!-- POP OVER EI TOIMI, EN TIEDÄ MIKSI <div class="navbar__part3">
+
+                <button class="navbar__part3__button" popovertarget="hamburger__menu">
+                    <img class="navbar__part3__button__icon" src="burger.svg">
+                    <div popover id="hamburger__menu" class="navbar__part3__popover">
+                        <a class="navbar__part3__popover__text" href="#">
+                            <p>Submit a request</p>
+                        </a>
+                        <div class="navbar__part3__popover__divider"></div>
+                        <a class="navbar__part3__popover__text" href="#">
+                            <p>Sign in</p>
+                        </a>
+
+                    </div>
+                </button>
+            </div> -->
+
+        </div>
+
+
+    </div>
+
+    <div class="mainpage">
+
+        <div class="mainpage__help">
+
+            <div class="mainpage__help__title">
+                <p>How can we help?</p>
+            </div>
+
+            <div class="mainpage__help__searchbar">
+                <input type="text" placeholder="Search" class="mainpage__help__searchbar__input">
+                <img src="arrow.svg" class="mainpage__help__searchbar__arrow">
+            </div>
+        </div>
+
+        <div class="mainpage__about">
+
+            <!-- MAINPAGE PART OPTIONS -->
+
+            <div class="mainpage__about__part">
+
+                <img src="git.svg" class="mainpage__about__part__icon">
+
+                <div class="mainpage__about__part__text">
+                    <h2 class="mainpage__about__part__text__title">
+                        Using Software
+                    </h2>
+
+                    <h3 class="mainpage__about__part__text__description">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis nesciunt commodi quod repellat
+                        aliquid eveniet provident,
+                    </h3>
+
+                    <div class="mainpage__about__part__text__link">
+                        <a href="#">Learn more →</a>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="mainpage__about__part">
+
+                <img src="people.svg" class="mainpage__about__part__icon">
+
+                <div class="mainpage__about__part__text">
+                    <h2 class="mainpage__about__part__text__title">
+                        Manage your account
+                    </h2>
+
+                    <h3 class="mainpage__about__part__text__description">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis nesciunt commodi quod repellat
+                        aliquid eveniet provident
+                    </h3>
+
+                    <div class="mainpage__about__part__text__link">
+                        <a href="#">Learn more →</a>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="mainpage__about__part">
+                <img src="puzzle.svg" class="mainpage__about__part__icon">
+
+                <div class="mainpage__about__part__text">
+                    <h2 class="mainpage__about__part__text__title">
+                        Manage organizations, teams and projects
+                    </h2>
+
+                    <h3 class="mainpage__about__part__text__description">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis nesciunt commodi quod repellat
+                        aliquid eveniet provident
+                    </h3>
+
+                    <div class="mainpage__about__part__text__link">
+                        <a href="#">Learn more→</a>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+            <div class="mainpage__about__part">
+                <img src="dollar.svg" class="mainpage__about__part__icon">
+
+                <div class="mainpage__about__part__text">
+                    <h2 class="mainpage__about__part__text__title">
+                        Manage Billing
+                    </h2>
+
+                    <h3 class="mainpage__about__part__text__description">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis nesciunt commodi quod repellat
+                        aliquid eveniet provident
+                    </h3>
+
+                    <div class="mainpage__about__part__text__link">
+                        <a href="#">Learn more →</a>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+            <div class="mainpage__about__part">
+                <img src="key.svg" class="mainpage__about__part__icon">
+
+                <div class="mainpage__about__part__text">
+                    <h2 class="mainpage__about__part__text__title">
+                        Authenticate to Software
+                    </h2>
+
+                    <h3 class="mainpage__about__part__text__description">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis nesciunt commodi quod repellat
+                        aliquid eveniet provident
+                    </h3>
+
+                    <div class="mainpage__about__part__text__link">
+                        <a href="#">Learn more →</a>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+            <div class="mainpage__about__part">
+                <img src="message.svg" class="mainpage__about__part__icon">
+
+                <div class="mainpage__about__part__text">
+                    <h2 class="mainpage__about__part__text__title">
+                        Software support
+                    </h2>
+
+                    <h3 class="mainpage__about__part__text__description">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis nesciunt commodi quod repellat
+                        aliquid eveniet provident
+                    </h3>
+
+                    <div class="mainpage__about__part__text__link">
+                        <a href="#">Learn more →</a>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+
+    <div class="footer">
+
+        <div class="footer__info">
+
+            <div class="footer__info__part">
+
+                <h3 class="footer__info__part__title">
+                    Software
+                </h3>
+                <div class="footer__info__part__list">
+                    <a class="footer__info__part__list__link" href="#">Start Trial</a>
+                    <a class="footer__info__part__list__link" href="#">Pricing</a>
+                    <a class="footer__info__part__list__link" href="#">Download</a>
+                </div>
+
+            </div>
+
+            <div class="footer__info__part">
+
+                <h3 class="footer__info__part__title">
+                    Resources
+                </h3>
+                <div class="footer__info__part__list">
+                    <a class="footer__info__part__list__link" href="#">Blog</a>
+                    <a class="footer__info__part__list__link" href="#">Help Center</a>
+                    <a class="footer__info__part__list__link" href="#">Release Notes</a>
+                    <a class="footer__info__part__list__link" href="#">Status</a>
+                </div>
+
+            </div>
+
+            <div class="footer__info__part">
+
+                <h3 class="footer__info__part__title">
+                    Community
+                </h3>
+                <div class="footer__info__part__list">
+                    <a class="footer__info__part__list__link" href="#">Twitter</a>
+                    <a class="footer__info__part__list__link" href="#">LinkedIn</a>
+                    <a class="footer__info__part__list__link" href="#">Facebook</a>
+                    <a class="footer__info__part__list__link" href="#">Dribbble</a>
+                    <a class="footer__info__part__list__link" href="#">Podcast</a>
+                </div>
+
+            </div>
+
+            <div class="footer__info__part">
+
+                <h3 class="footer__info__part__title">
+                    Company
+                </h3>
+                <div class="footer__info__part__list">
+                    <a class="footer__info__part__list__link" href="#">About Us</a>
+                    <a class="footer__info__part__list__link" href="#">Careers</a>
+                    <a class="footer__info__part__list__link" href="#">Legal</a>
+                </div>
+
+                <div class="footer__info__part__contact">
+                    <h4 class="footer__info__part__contact__title">Contact Us</h4>
+                    <a class="footer__info__part__contact__email" href="#">info@software.fi</a>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="footer__copyright">
+
+            <div class="footer__copyright__box">
+
+                <div>
+                    <img class="footer__copyright__box__logo" src="logo.svg">
+                </div>
+
+                <div class="footer__copyright__box__text">
+                    <p class="footer__copyright__box__text__line"> © Copyright 2025</p>
+                    <p class="footer__copyright__box__text__line">Software Oy</p>
+                    <p class="footer__copyright__box__text__line">All rights reserved</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</body>
+
+</html>
