@@ -1,0 +1,632 @@
+* {
+  box-sizing: border-box;
+  display: flex;
+  font-size: 15px;
+}
+@font-face {
+  font-family: "font";
+  src: url(fontti.ttf);
+}
+.kuva {
+  border: solid 2px hotpink;
+  filter: brightness(3);
+  
+  position: relative;
+  left: 5px;
+  top: 3px;
+}
+html {
+}
+header {
+    justify-content: center;
+    background-color: #24242c;
+}
+body {
+  margin: 0;
+  flex-direction: column;
+  font-family: font;
+}
+.otsikko__yla {
+  font-size: 1.35rem;
+  text-transform: uppercase;
+  max-height: 25px;
+  font-weight: 600;
+
+  position: relative;
+  left: 2px;
+  top: 1px;
+}
+.otsikko__ala {
+  font-size: 1.35rem;
+  text-transform: uppercase;
+  max-height: 25px;
+  font-weight: 600;
+  line-height: 120%;
+
+  position: relative;
+  left: 3px;
+  bottom: 4px;
+}
+header {
+}
+.ylapalkki {
+  justify-content: center;
+  flex-direction: column;
+  width: 1140px;
+  align-items: center;
+  background-color: #24242c;
+  color: white;
+}
+.sivun-sisältö {
+  display: flex;
+  min-height: 14px;
+  max-height: 14px;
+  min-width: 100%;
+  max-width: 100%;
+
+  background-color: white;
+  color: black;
+}
+.kipale {
+  width: 100%;
+}
+
+.ylaPalkki__yla-rivi {
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 10px;
+  padding-bottom: 2px;
+}
+.ylaPalkki__yla-rivi__logo {
+  position: relative;
+}
+.ylaPalkki__Osa {
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  color: white;
+  align-items: ;
+}
+.ylaPalkki__Osa__Kirjautuminen {
+  padding-left: 3px;
+  padding-right: 3px;
+  width: 240px;
+}
+.ylaPalkki__Osa__Kirjautuminen__Nappi {
+  align-items: center;
+  background-color: #24242c;
+  border: solid 2px #24242c;
+}
+.ylaPalkki__Osa__Kirjautuminen__Nappi a:any-link {
+  color: white;
+  background-color: #24242c;
+  font-size: 0.95em;
+  position: relative;
+  top: 3px;
+  right: 4px;
+  top: 5px; 
+}
+.ylaPalkki__Osa__Kirjautuminen__Nappi:hover a:any-link {
+  background-color: white;
+  color: black;
+}
+.ylaPalkki__Osa__Kirjautuminen__Nappi:hover {
+  background-color: white;
+  border-radius: 5px;
+}
+.logInIcon {
+  width: 33px;
+  padding-right: 10px;
+  filter: invert(100%);
+
+  position: relative;
+  left: 2px;
+  bottom: 2px;
+}
+.ylaPalkki__Osa__Kirjautuminen__Nappi:hover .logInIcon {
+  filter: invert(0%);
+}
+.ylaPalkki__Osa__Search {
+  border: solid 1px white;
+  background-color: white;
+  color: black;
+  flex: 20;
+  border: solid 1.5px grey;
+  border-radius: 0.2em;
+  width: 707px;
+  height: 98%;
+
+  position: relative;
+  right: 14px;
+  top: 2px;
+}
+.ylaPalkki__Osa__Search__Suurennuslasi {
+  position: relative;
+  height: 30px;
+  width: 30px;
+  top: 10px;
+  left: 40px;
+}
+.ylaPalkki__Osa__Search__SearchBar {
+  padding: 0px;
+  width: 100%;
+  height: 100%;
+}
+.ylaPalkki__Osa__Search__SearchBar__Input {
+  height: 100%;
+  width: 100%;
+  padding-left: 0px;
+}
+.ylaPalkki__Osa__Search__SearchBar__Input::placeholder {
+  margin-left: 50px;
+}
+.ylaPalkki__Osa__ostoskori {
+  align-items: center;
+  border: solid 2px white;
+  min-width: 50.5px;
+  height: 50px;
+  border-radius: 2px;
+  position: relative;
+  right: 4px;
+  top: 2px;
+}
+.ylaPalkki__Osa__ostoskori__nappi {
+  background-color: transparent;
+  border: transparent;
+  width: 100%;
+  height: 100%;
+}
+.ylaPalkki__Osa__ostoskori__nappi__symboli {
+  filter: invert(100%);
+  position: relative;
+  left: 8px;  
+}
+/*MUUTTAA OSTOSKORI SYMBOLIN TAKAISIN MUSTAKSI*/
+.ylaPalkki__Osa__ostoskori:hover .ylaPalkki__Osa__ostoskori__nappi__symboli {
+  filter: invert(0%);
+}
+.ylaPalkki__Osa__ostoskori:hover {
+  border-color: white;
+  background-color: white;
+}
+.ylaPalkki__ala-rivi {
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.ylaPalkki__ala-rivi__Osa {
+  flex-direction: column;
+  justify-content: center;
+  text-decoration: none;
+  color: black;
+  height: 40px;
+  align-items: center;
+  padding-left: 9.5px;
+  padding-right: 9.5px;
+}
+.ylaPalkki__ala-rivi__Osa a:any-link {
+  position: relative;
+  top: 1.5px;
+}
+.ylaPalkki__ala-rivi__Osa:hover {
+  background-color: white;
+}
+a:any-link {
+  text-decoration: none;
+}
+.ylaPalkki__ala-rivi__Osa a:any-link {
+  color: white;
+   font-size: 0.9em;
+}
+.ylaPalkki__ala-rivi__Osa:hover a:any-link {
+  background-color: white;
+  color: orange !important;
+}
+
+/*Alapalkki*/
+
+.alaPalkki {
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  padding-top: 10px;
+  padding-left: 80px;
+  padding-right: 60px;
+  padding-bottom: 25px;
+  flex: 1;
+
+  background-color: #24242c;
+  color: white;
+}
+.alaPalkki__yla-rivi {
+  flex-direction: row;
+  justify-content: center;
+  padding-bottom: 65px;
+}
+.viiva {
+    width: 1140px;
+    height: 0.5px;
+    background-color: grey;
+    position: absolute;
+    bottom: 136px;
+    left: 70px;
+}
+.viiva2 {
+  width: 260px;
+  height: 0.5px;
+  background-color: grey;
+  position: absolute;
+  bottom: 310px;
+  left: 82px;
+}
+.alapalkki__ala-rivi {
+  justify-content: center;
+  flex-direction: row;
+  position: relative;
+  top: 0px;
+}
+
+/*ASPA*/
+
+.asiakaspalvelu {
+  flex-direction: column;
+  justify-content: baseline;
+  min-width: 250px;
+}
+.asiakaspalvelu a:any-link {
+  color: white;
+  font-size: 0.9em;
+}
+.asiakaspalvelu-ja-yritysmyynti {
+  flex-direction: column;
+  justify-content: center;
+}
+.asiakaspalvelu__aukioloajat {
+  flex-direction: row;
+  padding-bottom: 5px;
+}
+.asiakaspalvelu__aukioloajat__paivat {
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 10px;
+  padding-right: 30px;
+  font-size: 0.9em;
+
+  position: relative;
+  left: 2px;
+}
+.asiakaspalvelu__aukioloajat__aika {
+    font-size: 0.9em;
+    position: relative;
+    left: 3px;
+}
+.asiakaspalvelu__aukioloajat__puhelin {
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 10px;
+}
+.asiakaspalvelu__yhteystiedot {
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  padding-bottom: 5px;
+
+  position: relative;
+  left: 2px;
+}
+.asiakaspalvelu__yhteystiedot__symboli {
+  padding-right: 10px;
+  position: relative;
+  top: 2px;
+}
+.asiakaspalvelu__yhteystiedot__puhelin {
+  flex-direction: row;
+  justify-content: center;
+  padding-bottom: 1px;
+}
+.asiakaspalvelu__yhteystiedot__puhelin__numero {
+  font-size: 1.05em;
+  position: relative;
+  top: 2px;
+}
+.asiakaspalvelu__yhteystiedot__sahkoposti {
+  flex-direction: row;
+  justify-content: center;
+}
+.asiakaspalvelu__yhteystiedot__sahkoposti__osoite {
+  font-size: 1.05em;
+  position: relative;
+  top: 2px;
+}
+.yritysmyynti {
+  flex-direction: column;
+  justify-content: center;
+
+  position: relative;
+  top: 10px;
+}
+.yritysmyynti a:any-link {
+  color: white;
+  font-size: 0.9em;
+}
+
+/*MYYMÄLÄ TURKU*/
+
+.myymala__turku {
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: baseline;
+}
+.myymala__turku__info {
+  flex-direction: column;
+  justify-content: start;
+}
+.myymala__turku__info__aukioloajat {
+  flex-direction: column;
+  justify-content: baseline;
+  position: relative;
+  left: 2.75px;
+  bottom: 2.75px;
+}
+.myymala__turku__info__aukioloajat__paivat {
+  flex-direction: row;
+  justify-content: left;
+  max-height: 25px;
+}
+.myymala__turku__info__aukioloajat__paivat__vklp {
+    position: relative;
+    bottom: 5px;
+  flex-direction: row;
+  justify-content: left;
+  max-height: 25px;
+}
+.myymala__turku__info__aukioloajat__paivat__arki {
+     font-size: 0.9em;
+     align-items: center;
+}
+.myymala__turku__info__aukioloajat__paivat__aika {
+     font-size: 0.9em;
+     align-items: center;
+  padding-left: 31px;
+}
+.myymala__turku__info__maksu {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+  width: 90%;
+   font-size: 0.9em;
+}
+.myymala__turku__info__maksu__teksti {
+     font-size: 1em;
+     position: relative;
+     left: 2px;
+     bottom: 3px;
+}
+.myymala__turku__info__sijainti {
+  flex-direction: column;
+  align-items: start;
+  padding-top: 15px;
+  position: relative;
+  left: 5px;
+}
+.myymala__turku__info__sijainti__osoite {
+  flex-direction: row;
+   font-size: 0.9em;
+  justify-content: center;
+}
+.myymala__turku__info__sijainti__postinumero {
+  flex-direction: column;
+  justify-content: center;
+   font-size: 0.9em;
+}
+.pin {
+  position: relative;
+  right: 1px;
+}
+
+/*YHTEISÖT*/
+
+.yhteisöt {
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: baseline;
+}
+.yhteisöt__some {
+  align-items: start;
+  position: relative;
+  bottom: 2px;
+
+}
+.yhteisöt__some__brandi {
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 3px;
+}
+
+/*UUTISKIRJE*/
+
+.uutiskirje {
+  flex-direction: column;
+  justify-content: baseline;
+}
+.uutiskirje__info {
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+}
+.uutiskirje__info__tilausinfo {
+  flex-direction: column;
+  justify-content: baseline;
+  align-items: center;
+  max-width: 80%;
+  padding-bottom: 1em;
+   font-size: 0.9em;
+   position: relative;
+   bottom: 5px;
+}
+.uutiskirje__info__tilaa__nappi {
+  flex-direction: column;
+  justify-content: center;
+  font-weight: bold;
+
+  position: relative;
+  left: 2px;
+  bottom: 2px;
+
+  width: 160px;
+  height: 35px;
+  background-color: #e76c23;
+  text-decoration: none;
+  text-transform: uppercase;
+  align-items: center;
+  border-radius: 2px;
+}
+.uutiskirje__info__tilaa__nappi a:any-link {
+  color: white !important;
+}
+
+/*HARMAA PALKKI ALAOSA*/
+
+.harmaaPalkkiAlaOsa {
+  flex-direction: row;
+  justify-content: center;
+}
+
+/* INFO */
+.info {
+  flex-direction: column;
+  justify-content: baseline;
+}
+.info a:any-link {
+  color: white;
+   font-size: 0.9em;
+}
+.info__sisalto {
+  flex-direction: column;
+  justify-content: center;
+
+  position: relative;
+  left: 3px;
+  bottom: 7px;
+}
+.info__sisalto__nappi {
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 10px;
+}
+.info__sisalto__nappi__teksti {
+  font-size: 1em;
+
+  position: relative;
+  left: 2.5px;
+  bottom: 0.5px;
+}
+
+/*SHOP IN SHOPS */
+
+.shop-in-shops {
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: baseline;
+}
+.shop-in-shops__sisalto {
+  flex-direction: column;
+  justify-content: start;
+  width: 80%;
+
+  position: relative;
+  bottom: 12px;
+  left: 2px;
+}
+.shop-in-shops a:any-link {
+  color: white;
+  font-size: 13.5px;
+}
+.shop-in-shops__sisalto__yla-osio {
+  flex-direction: row;
+  justify-content: start;
+  flex-wrap: wrap;
+  padding-bottom: 20px;
+}
+.shop-in-shops__sisalto__ala-osio {
+  flex-direction: row;
+  justify-content: start;
+  flex-wrap: wrap;
+}
+.shop-in-shops__brandi {
+  padding-right: 5px;
+}
+.shop-in-shops__brandi::after {
+  content: "|";
+  font-size: 13px;
+}
+/* ARTIKKELIT JA BLOGI */
+
+.artikkelit-ja-blogi {
+  flex-direction: column;
+  justify-content: baseline;
+}
+.artikkelit-ja-blogi__sisalto {
+  flex-direction: column;
+  justify-content: center;
+
+  position: relative;
+  bottom: 7px;
+  left: 2px;
+}
+.artikkelit-ja-blogi__sisalto__jimms-oppaat {
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 10px;
+   font-size: 0.95em;
+}
+.artikkelit-ja-blogi__sisalto__jimms-blogi {
+  flex-direction: column;
+  justify-content: center;
+   font-size: 0.95em;
+}
+
+/* SERTIT JA PALKINNOT */
+
+.sertifikaatit-ja-palkinnot {
+  flex-direction: column;
+  justify-content: baseline;
+}
+.sertifikaatit-ja-palkinnot__lista {
+  flex-direction: row;
+  justify-content: baseline;
+  align-items: center;
+}
+.sertifikaatiot-ja-palkinnot__lista__palkinto {
+  flex-direction: row;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.sivun-alapalkki__musta-alue {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #191c1f;
+  color: white;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  height: 86px;
+}
+.sivun-alapalkki__musta-alue__takuu-ja-toimitusehdot {
+  flex-direction: row;
+  justify-content: center;
+  padding-bottom: 12px;
+}
+.sivun-alapalkki__musta-alue__takuu-ja-toimitusehdot a:any-link {
+    font-size: 0.9em;
+    color: lightgray;
+}
+.sivun-alapalkki__musta-alue__tekijanoikeus {
+    font-size: 0.9em;
+  flex-direction: column;
+  justify-content: center;
+  color: lightgray;
+}
